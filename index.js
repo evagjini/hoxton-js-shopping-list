@@ -48,7 +48,7 @@ for(let item of shoppingList) {
     
 }
 
-console.log(`The total will be:${total.toFixed(2)}`)
+console.log(`The total will be:£${total.toFixed(2)}`)
 
 
 
