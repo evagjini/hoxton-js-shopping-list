@@ -17,17 +17,39 @@ console.log(
 
 let shoppingList = [
    
-      { name: "Milk", price: 1.20 } ,
+      { name: 'Milk', price: 1.20 } ,
     
-      { name: "Cocoa", price: 2.00},
+      { name: 'Cocoa', price: 2.00},
     
-      { name: "Salad", price: 2.00 },
+      { name: 'Salad', price: 2.00 },
     
-      { name: "Carrots", price: 2.00 },
+      { name: 'Carrots', price: 2.00 },
     
-      { name: "Tomatoes", price: 2.50 },
+      { name: 'Tomatoes', price: 2.50 },
     
-      { name: "Ready meals", price: 5.00 },
+      { name: 'Ready meals', price: 5.00 },
     
     
 ]
+// console.log(shoppingList)
+
+ let userNameItem= prompt("What is the name of the item?");
+let userItemPrice = Number(prompt("What is the price?"))
+ 
+
+let newItem = { name:`${userNameItem}`, price:userItemPrice}
+shoppingList.push(newItem)
+
+let total = 0
+for(let item of shoppingList) {
+    total += item.price
+    console.log(`${userNameItem} costs £${userItemPrice}`)
+
+    
+}
+
+console.log(`The total will be:${total.toFixed(2)}`)
+
+
+
+
