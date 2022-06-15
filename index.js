@@ -44,7 +44,7 @@ let total = 0
 for(let item of shoppingList) {
 
     total += item.price
-    console.log(`${item.name} costs £${item.price}`)
+    console.log(`${item.name} costs £${item.price.toFixed(2)}`)
 
     
 }
